@@ -7,13 +7,63 @@
   flex-direction: column;
 }
 
-.prime-container .prime-search-button {
-  color: red;
-  height: 60px;
-  width: 40px;
-  align-self: flex-end;
+.prime-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  border-bottom: 1px solid #3d5465;
 }
 
-.prime-container .input-wrapper {
+.prime-header .reload-icon {
+  color: #1ea2f1;
+  width: 32px;
+}
+
+.prime-header .right-title {
+  color: #1ea2f1;
+}
+
+.prime-body {
   flex: 1;
+  padding: 8px;
+}
+
+.prime-body .input-wrapper {
+  flex: 1;
+}
+
+.input-wrapper .prime-input {
+  border: none;
+  outline: 0;
+  background-color: rgb(21, 32, 43);
+  color: white;
+  width: 100%;
+  font-size: 32px;
+  padding: 0;
+}
+
+.prime-body .prime-result {
+  color: white;
+  font-size: 32px;
+}
+
+.input-wrapper .prime-input:focus {
+  border: none;
+  outline: 0;
+}
+
+.prime-footer {
+  padding: 8px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.prime-footer .prime-search-button {
+  border-radius: 16px;
+  color: white;
+  background-color: #1ea2f1;
+  height: 32px;
+  border: 0;
+  outline: 0;
 }

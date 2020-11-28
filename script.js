@@ -1,11 +1,3 @@
-let value = 0;
-
-const input = document.querySelector(".prime-input");
-input.addEventListener("keydown", () => {
-  console.log(+input.value);
-  value = +input.value;
-});
-console.dir(input);
 
 function isPrime(x) {
   if (x == NaN || x <= 1) {
@@ -21,8 +13,7 @@ function isPrime(x) {
 
 const button = document.querySelector(".prime-search-button");
 button.addEventListener("click", () => {
-  console.log(value);
-  console.log(isPrime(value));
+  const input = document.querySelector(".prime-input");
+  const result = document.querySelector(".prime-result");
+  result.innerHTML = isPrime(+input.value) ? "素数" : "素数ではない";
 });
-
-console.dir(button);
