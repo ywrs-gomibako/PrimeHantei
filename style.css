@@ -1,0 +1,19 @@
+.prime-container {
+  background-color: rgb(21, 32, 43);
+  height: 250px;
+  width: 400px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.prime-container .prime-search-button {
+  color: red;
+  height: 60px;
+  width: 40px;
+  align-self: flex-end;
+}
+
+.prime-container .input-wrapper {
+  flex: 1;
+}
